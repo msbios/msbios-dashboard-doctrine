@@ -24,24 +24,19 @@
         }
     },
     "require": {
-        "zendframework/zend-component-installer": "^1.1",
-        "msbios/cpanel": "^1.0",
+        "msbios/dashboard": "^1.0",
         "msbios/cpanel-doctrine": "^1.0",
-        "msbios/guard": "^1.0",
-        "msbios/guard-resource": "^1.0",
-        "msbios/authentication": "^1.0",
         "msbios/authentication-doctrine": "^1.0",
         "msbios/guard-resource-doctrine": "^1.0",
         "msbios/doctrine": "^1.0",
-        "msbios/resource": "^1.0",
         "msbios/resource-doctrine": "^1.0",
-        "msbios/theme": "^1.0",
-        "msbios/navigation": "^1.0"
+        "msbios/guard-cpanel-doctrine": "^1.0"
     },
     "require-dev": {
         "msbios/debug": "^1.0",
         "msbios/test": "^1.0"
     },
+
     "scripts": {
         "cs-check": "phpcs",
         "cs-fix": "phpcbf",
@@ -51,7 +46,7 @@
         ],
         "test-coverage": "phpunit --colors=always --coverage-clover clover.xml",
         "upload-coverage": "coveralls -v",
-        "themes": "cd public && ln -s ../themes/default/public default",
+        "themes": "cd public && ln -s ../vendor/msbios/cpanel/themes/limitless/public limitless",
         "serve": "php -S 0.0.0.0:3107 -t public public/index.php",
         "commit": "git add . && git commit -a -m \"Lazy Composer Commiter\" && git push"
     },

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "98d884d159e6754190d50b1341623cdd",
+    "content-hash": "8d91f5f804830523f6ca3cbf2f03c61b",
     "packages": [
         {
             "name": "behat/transliterator",
@@ -1127,6 +1127,61 @@
             "time": "2016-11-11T18:43:20+00:00"
         },
         {
+            "name": "msbios/application",
+            "version": "v1.0.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/msbios/msbios-application.git",
+                "reference": "d12fbe79e7da4ed760c57acb9703832bb16a33cf"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/msbios/msbios-application/zipball/d12fbe79e7da4ed760c57acb9703832bb16a33cf",
+                "reference": "d12fbe79e7da4ed760c57acb9703832bb16a33cf",
+                "shasum": ""
+            },
+            "require": {
+                "msbios/navigation": "^1.0",
+                "msbios/theme": "^1.0",
+                "patchwork/utf8": "^1.3",
+                "php": "^5.6 || ^7.0",
+                "zendframework/zend-component-installer": "^1.0 || ^0.7 || ^1.0.0-dev@dev",
+                "zendframework/zend-mvc": "^3.0.1",
+                "zendframework/zend-mvc-plugins": "^1.0"
+            },
+            "require-dev": {
+                "msbios/debug": "^1.0",
+                "msbios/test": "^1.0"
+            },
+            "type": "library",
+            "extra": {
+                "zf": {
+                    "component": "MSBios\\Application"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "MSBios\\Application\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL"
+            ],
+            "authors": [
+                {
+                    "name": "Judzhin Miles",
+                    "email": "info@msbios.com"
+                }
+            ],
+            "description": "MSBios Application",
+            "homepage": "https://github.com/msbios/msbios-application",
+            "keywords": [
+                "php"
+            ],
+            "time": "2017-12-02T21:14:34+00:00"
+        },
+        {
             "name": "msbios/assetic",
             "version": "v1.0.1",
             "source": {
@@ -1278,16 +1333,16 @@
         },
         {
             "name": "msbios/cpanel",
-            "version": "v1.0.19",
+            "version": "v1.0.20",
             "source": {
                 "type": "git",
                 "url": "https://github.com/msbios/msbios-cpanel.git",
-                "reference": "2907265f75e929fdef07d8b2cd96b55cbd07cbb3"
+                "reference": "72c00a81df23f03348f70a700421c24d2fc41e6e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/msbios/msbios-cpanel/zipball/2907265f75e929fdef07d8b2cd96b55cbd07cbb3",
-                "reference": "2907265f75e929fdef07d8b2cd96b55cbd07cbb3",
+                "url": "https://api.github.com/repos/msbios/msbios-cpanel/zipball/72c00a81df23f03348f70a700421c24d2fc41e6e",
+                "reference": "72c00a81df23f03348f70a700421c24d2fc41e6e",
                 "shasum": ""
             },
             "require": {
@@ -1331,7 +1386,7 @@
             "keywords": [
                 "php"
             ],
-            "time": "2017-11-26T19:27:55+00:00"
+            "time": "2017-12-07T10:25:31+00:00"
         },
         {
             "name": "msbios/cpanel-doctrine",
@@ -1388,6 +1443,61 @@
                 "php"
             ],
             "time": "2017-11-26T19:18:35+00:00"
+        },
+        {
+            "name": "msbios/dashboard",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/msbios/msbios-dashboard.git",
+                "reference": "8cc62ef155cf7e6426d05d25db15a636ca5383a8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/msbios/msbios-dashboard/zipball/8cc62ef155cf7e6426d05d25db15a636ca5383a8",
+                "reference": "8cc62ef155cf7e6426d05d25db15a636ca5383a8",
+                "shasum": ""
+            },
+            "require": {
+                "msbios/application": "^1.0",
+                "msbios/authentication": "^1.0",
+                "msbios/cpanel": "^1.0",
+                "msbios/guard": "^1.0",
+                "msbios/guard-cpanel": "^1.0",
+                "msbios/guard-resource": "^1.0",
+                "msbios/resource": "^1.0"
+            },
+            "require-dev": {
+                "msbios/debug": "^1.0",
+                "msbios/test": "^1.0"
+            },
+            "type": "library",
+            "extra": {
+                "zf": {
+                    "component": "MSBios\\Dashboard"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "MSBios\\Dashboard\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL"
+            ],
+            "authors": [
+                {
+                    "name": "Judzhin Miles",
+                    "email": "info@msbios.com"
+                }
+            ],
+            "description": "MSBios Dashboard",
+            "homepage": "https://github.com/msbios/msbios-dashboard",
+            "keywords": [
+                "php"
+            ],
+            "time": "2017-12-07T10:31:38+00:00"
         },
         {
             "name": "msbios/db",
@@ -1646,6 +1756,106 @@
                 "php"
             ],
             "time": "2017-11-26T18:49:50+00:00"
+        },
+        {
+            "name": "msbios/guard-cpanel",
+            "version": "v1.0.22",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/msbios/msbios-guard-cpanel.git",
+                "reference": "e9f69b53f4aeadcc91ebfcced732e1a1b3a68471"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/msbios/msbios-guard-cpanel/zipball/e9f69b53f4aeadcc91ebfcced732e1a1b3a68471",
+                "reference": "e9f69b53f4aeadcc91ebfcced732e1a1b3a68471",
+                "shasum": ""
+            },
+            "require-dev": {
+                "msbios/application": "^1.0",
+                "msbios/authentication": "^1.0",
+                "msbios/cpanel": "^1.0",
+                "msbios/debug": "^1.0",
+                "msbios/guard": "^1.0",
+                "msbios/guard-resource": "^1.0",
+                "msbios/resource": "^1.0",
+                "msbios/test": "^1.0"
+            },
+            "type": "library",
+            "extra": {
+                "zf": {
+                    "component": "MSBios\\Guard\\CPanel"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "MSBios\\Guard\\CPanel\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL"
+            ],
+            "authors": [
+                {
+                    "name": "Judzhin Miles",
+                    "email": "info@msbios.com"
+                }
+            ],
+            "description": "MSBios Guard CPanel",
+            "homepage": "https://github.com/msbios/msbios-guard-cpanel",
+            "keywords": [
+                "php"
+            ],
+            "time": "2017-11-26T17:53:06+00:00"
+        },
+        {
+            "name": "msbios/guard-cpanel-doctrine",
+            "version": "v1.0.11",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/msbios/msbios-guard-cpanel-doctrine.git",
+                "reference": "96f22142da74ea0a72cffd02354dbad2ff8a3fd6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/msbios/msbios-guard-cpanel-doctrine/zipball/96f22142da74ea0a72cffd02354dbad2ff8a3fd6",
+                "reference": "96f22142da74ea0a72cffd02354dbad2ff8a3fd6",
+                "shasum": ""
+            },
+            "require-dev": {
+                "msbios/application": "~1.0",
+                "msbios/cpanel-doctrine": "^1.0",
+                "msbios/debug": "^1.0",
+                "msbios/test": "^1.0"
+            },
+            "type": "library",
+            "extra": {
+                "zf": {
+                    "component": "MSBios\\Guard\\CPanel\\Doctrine"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "MSBios\\Guard\\CPanel\\Doctrine\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL"
+            ],
+            "authors": [
+                {
+                    "name": "Judzhin Miles",
+                    "email": "info@msbios.com"
+                }
+            ],
+            "description": "MSBios Guard CPanel",
+            "homepage": "https://github.com/msbios/msbios-guard-cpanel-doctrine",
+            "keywords": [
+                "php"
+            ],
+            "time": "2017-11-26T21:20:02+00:00"
         },
         {
             "name": "msbios/guard-resource",
@@ -2300,6 +2510,65 @@
                 "random"
             ],
             "time": "2017-09-27T21:40:39+00:00"
+        },
+        {
+            "name": "patchwork/utf8",
+            "version": "v1.3.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/tchwork/utf8.git",
+                "reference": "30ec6451aec7d2536f0af8fe535f70c764f2c47a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/tchwork/utf8/zipball/30ec6451aec7d2536f0af8fe535f70c764f2c47a",
+                "reference": "30ec6451aec7d2536f0af8fe535f70c764f2c47a",
+                "shasum": ""
+            },
+            "require": {
+                "lib-pcre": ">=7.3",
+                "php": ">=5.3.0"
+            },
+            "suggest": {
+                "ext-iconv": "Use iconv for best performance",
+                "ext-intl": "Use Intl for best performance",
+                "ext-mbstring": "Use Mbstring for best performance",
+                "ext-wfio": "Use WFIO for UTF-8 filesystem access on Windows"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.3-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Patchwork\\": "src/Patchwork/"
+                },
+                "classmap": [
+                    "src/Normalizer.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "(Apache-2.0 or GPL-2.0)"
+            ],
+            "authors": [
+                {
+                    "name": "Nicolas Grekas",
+                    "email": "p@tchwork.com"
+                }
+            ],
+            "description": "Portable and performant UTF-8, Unicode and Grapheme Clusters for PHP",
+            "homepage": "https://github.com/tchwork/utf8",
+            "keywords": [
+                "grapheme",
+                "i18n",
+                "unicode",
+                "utf-8",
+                "utf8"
+            ],
+            "time": "2016-05-18T13:57:10+00:00"
         },
         {
             "name": "psr/container",
@@ -3142,27 +3411,27 @@
         },
         {
             "name": "zendframework/zend-form",
-            "version": "2.10.2",
+            "version": "2.11.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/zendframework/zend-form.git",
-                "reference": "252db729887844025772bb8045f8df605850ed9c"
+                "reference": "b68a9f07d93381613b68817091d0505ca94d3363"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/zendframework/zend-form/zipball/252db729887844025772bb8045f8df605850ed9c",
-                "reference": "252db729887844025772bb8045f8df605850ed9c",
+                "url": "https://api.github.com/repos/zendframework/zend-form/zipball/b68a9f07d93381613b68817091d0505ca94d3363",
+                "reference": "b68a9f07d93381613b68817091d0505ca94d3363",
                 "shasum": ""
             },
             "require": {
-                "php": "^7.0 || ^5.6",
+                "php": "^5.6 || ^7.0",
                 "zendframework/zend-hydrator": "^1.1 || ^2.1",
-                "zendframework/zend-inputfilter": "^2.6",
+                "zendframework/zend-inputfilter": "^2.8",
                 "zendframework/zend-stdlib": "^2.7 || ^3.0"
             },
             "require-dev": {
                 "doctrine/annotations": "~1.0",
-                "phpunit/phpunit": "^6.0.8 || ^5.7.15",
+                "phpunit/phpunit": "^5.7.23 || ^6.5.3",
                 "zendframework/zend-cache": "^2.6.1",
                 "zendframework/zend-captcha": "^2.7.1",
                 "zendframework/zend-code": "^2.6 || ^3.0",
@@ -3172,7 +3441,7 @@
                 "zendframework/zend-filter": "^2.6",
                 "zendframework/zend-i18n": "^2.6",
                 "zendframework/zend-servicemanager": "^2.7.5 || ^3.0.3",
-                "zendframework/zend-session": "^2.6.2",
+                "zendframework/zend-session": "^2.8.1",
                 "zendframework/zend-text": "^2.6",
                 "zendframework/zend-validator": "^2.6",
                 "zendframework/zend-view": "^2.6.2",
@@ -3190,8 +3459,8 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.10-dev",
-                    "dev-develop": "2.11-dev"
+                    "dev-master": "2.11.x-dev",
+                    "dev-develop": "2.12.x-dev"
                 },
                 "zf": {
                     "component": "Zend\\Form",
@@ -3210,12 +3479,13 @@
             "license": [
                 "BSD-3-Clause"
             ],
-            "homepage": "https://github.com/zendframework/zend-form",
+            "description": "Validate and display simple and complex forms, casting forms to business objects and vice versa",
             "keywords": [
+                "ZendFramework",
                 "form",
-                "zf2"
+                "zf"
             ],
-            "time": "2017-05-18T14:59:53+00:00"
+            "time": "2017-12-06T21:09:08+00:00"
         },
         {
             "name": "zendframework/zend-http",

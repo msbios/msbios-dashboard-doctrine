@@ -17,10 +17,4 @@ return [
             ],
         ],
     ],
-
-    \MSBios\Assetic\Module::class => [
-        'paths' => [
-            __DIR__ . '/../../vendor/msbios/cpanel/themes/limitless/public'
-        ],
-    ],
 ];

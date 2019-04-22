@@ -51,41 +51,11 @@ class Role extends \MSBios\Guard\Resource\Doctrine\Entity\Role implements \Doctr
         $this->__cloner__      = $cloner;
     }
 
-    /**
-     * {@inheritDoc}
-     * @param string $name
-     */
-    public function & __get($name)
-    {
-        $this->__initializer__ && $this->__initializer__->__invoke($this, '__get', [$name]);
 
-        return parent::__get($name);
-    }
 
-    /**
-     * {@inheritDoc}
-     * @param string $name
-     * @param mixed  $value
-     */
-    public function __set($name, $value)
-    {
-        $this->__initializer__ && $this->__initializer__->__invoke($this, '__set', [$name, $value]);
 
-        return parent::__set($name, $value);
-    }
 
-    /**
-     * {@inheritDoc}
-     * @param  string $name
-     * @return boolean
-     */
-    public function __isset($name)
-    {
-        $this->__initializer__ && $this->__initializer__->__invoke($this, '__isset', [$name]);
 
-        return parent::__isset($name);
-
-    }
 
     /**
      * 
@@ -94,10 +64,10 @@ class Role extends \MSBios\Guard\Resource\Doctrine\Entity\Role implements \Doctr
     public function __sleep()
     {
         if ($this->__isInitialized__) {
-            return ['__isInitialized__', '' . "\0" . 'MSBios\\Guard\\Resource\\Doctrine\\Entity\\Role' . "\0" . 'parent', '' . "\0" . 'MSBios\\Guard\\Resource\\Doctrine\\Entity\\Role' . "\0" . 'children', '' . "\0" . 'MSBios\\Guard\\Resource\\Doctrine\\Entity\\Role' . "\0" . 'code', '' . "\0" . 'MSBios\\Guard\\Resource\\Doctrine\\Entity\\Role' . "\0" . 'name', 'adapter', 'origData', 'data', 'storage', 'flag', 'iteratorClass', 'protectedProperties', '' . "\0" . 'MSBios\\Guard\\Resource\\Doctrine\\Entity\\Role' . "\0" . 'createdAt', '' . "\0" . 'MSBios\\Guard\\Resource\\Doctrine\\Entity\\Role' . "\0" . 'modifiedAt', '' . "\0" . 'MSBios\\Guard\\Resource\\Doctrine\\Entity\\Role' . "\0" . 'rowStatus'];
+            return ['__isInitialized__', '' . "\0" . 'MSBios\\Guard\\Resource\\Doctrine\\Entity\\Role' . "\0" . 'parent', '' . "\0" . 'MSBios\\Guard\\Resource\\Doctrine\\Entity\\Role' . "\0" . 'children', '' . "\0" . 'MSBios\\Guard\\Resource\\Doctrine\\Entity\\Role' . "\0" . 'code', '' . "\0" . 'MSBios\\Guard\\Resource\\Doctrine\\Entity\\Role' . "\0" . 'name', '' . "\0" . 'MSBios\\Guard\\Resource\\Doctrine\\Entity\\Role' . "\0" . 'createdAt', '' . "\0" . 'MSBios\\Guard\\Resource\\Doctrine\\Entity\\Role' . "\0" . 'modifiedAt', '' . "\0" . 'MSBios\\Guard\\Resource\\Doctrine\\Entity\\Role' . "\0" . 'rowStatus'];
         }
 
-        return ['__isInitialized__', '' . "\0" . 'MSBios\\Guard\\Resource\\Doctrine\\Entity\\Role' . "\0" . 'parent', '' . "\0" . 'MSBios\\Guard\\Resource\\Doctrine\\Entity\\Role' . "\0" . 'children', '' . "\0" . 'MSBios\\Guard\\Resource\\Doctrine\\Entity\\Role' . "\0" . 'code', '' . "\0" . 'MSBios\\Guard\\Resource\\Doctrine\\Entity\\Role' . "\0" . 'name', 'adapter', 'origData', 'data', 'storage', 'flag', 'iteratorClass', 'protectedProperties', '' . "\0" . 'MSBios\\Guard\\Resource\\Doctrine\\Entity\\Role' . "\0" . 'createdAt', '' . "\0" . 'MSBios\\Guard\\Resource\\Doctrine\\Entity\\Role' . "\0" . 'modifiedAt', '' . "\0" . 'MSBios\\Guard\\Resource\\Doctrine\\Entity\\Role' . "\0" . 'rowStatus'];
+        return ['__isInitialized__', '' . "\0" . 'MSBios\\Guard\\Resource\\Doctrine\\Entity\\Role' . "\0" . 'parent', '' . "\0" . 'MSBios\\Guard\\Resource\\Doctrine\\Entity\\Role' . "\0" . 'children', '' . "\0" . 'MSBios\\Guard\\Resource\\Doctrine\\Entity\\Role' . "\0" . 'code', '' . "\0" . 'MSBios\\Guard\\Resource\\Doctrine\\Entity\\Role' . "\0" . 'name', '' . "\0" . 'MSBios\\Guard\\Resource\\Doctrine\\Entity\\Role' . "\0" . 'createdAt', '' . "\0" . 'MSBios\\Guard\\Resource\\Doctrine\\Entity\\Role' . "\0" . 'modifiedAt', '' . "\0" . 'MSBios\\Guard\\Resource\\Doctrine\\Entity\\Role' . "\0" . 'rowStatus'];
     }
 
     /**
@@ -217,7 +187,7 @@ class Role extends \MSBios\Guard\Resource\Doctrine\Entity\Role implements \Doctr
     /**
      * {@inheritDoc}
      */
-    public function setParent($parent)
+    public function setParent(\MSBios\Guard\Resource\Doctrine\Entity\Role $parent)
     {
 
         $this->__initializer__ && $this->__initializer__->__invoke($this, 'setParent', [$parent]);
@@ -294,12 +264,12 @@ class Role extends \MSBios\Guard\Resource\Doctrine\Entity\Role implements \Doctr
     /**
      * {@inheritDoc}
      */
-    public function setId($id)
+    public function getRoleId()
     {
 
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setId', [$id]);
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getRoleId', []);
 
-        return parent::setId($id);
+        return parent::getRoleId();
     }
 
     /**
@@ -316,412 +286,12 @@ class Role extends \MSBios\Guard\Resource\Doctrine\Entity\Role implements \Doctr
     /**
      * {@inheritDoc}
      */
-    public function init()
+    public function setId($id)
     {
 
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'init', []);
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setId', [$id]);
 
-        return parent::init();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function addData(array $arr)
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'addData', [$arr]);
-
-        return parent::addData($arr);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function setData($key, $value = NULL)
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setData', [$key, $value]);
-
-        return parent::setData($key, $value);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function unsetData($key = NULL)
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'unsetData', [$key]);
-
-        return parent::unsetData($key);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function getData($key = '', $index = NULL)
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getData', [$key, $index]);
-
-        return parent::getData($key, $index);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function hasData($key = '')
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'hasData', [$key]);
-
-        return parent::hasData($key);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function __toArray(array $array = array (
-))
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, '__toArray', [$array]);
-
-        return parent::__toArray($array);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function toArray(array $array = array (
-))
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'toArray', [$array]);
-
-        return parent::toArray($array);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function toXml(array $array = array (
-), $rootName = 'item', $addOpenTag = false, $addCdata = true)
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'toXml', [$array, $rootName, $addOpenTag, $addCdata]);
-
-        return parent::toXml($array, $rootName, $addOpenTag, $addCdata);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function toJson(array $array = array (
-))
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'toJson', [$array]);
-
-        return parent::toJson($array);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function toString($format = '')
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'toString', [$format]);
-
-        return parent::toString($format);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function __call($method, $args)
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, '__call', [$method, $args]);
-
-        return parent::__call($method, $args);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function getOrigData($key = NULL)
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getOrigData', [$key]);
-
-        return parent::getOrigData($key);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function setOrigData($key = NULL, $data = NULL)
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setOrigData', [$key, $data]);
-
-        return parent::setOrigData($key, $data);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function hasDataChangedFor($field)
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'hasDataChangedFor', [$field]);
-
-        return parent::hasDataChangedFor($field);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function __unset($key)
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, '__unset', [$key]);
-
-        return parent::__unset($key);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function append($value)
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'append', [$value]);
-
-        return parent::append($value);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function asort()
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'asort', []);
-
-        return parent::asort();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function count()
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'count', []);
-
-        return parent::count();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function exchangeArray($data)
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'exchangeArray', [$data]);
-
-        return parent::exchangeArray($data);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function getArrayCopy()
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getArrayCopy', []);
-
-        return parent::getArrayCopy();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function getFlags()
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getFlags', []);
-
-        return parent::getFlags();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function getIterator()
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getIterator', []);
-
-        return parent::getIterator();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function getIteratorClass()
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getIteratorClass', []);
-
-        return parent::getIteratorClass();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function ksort()
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'ksort', []);
-
-        return parent::ksort();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function natcasesort()
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'natcasesort', []);
-
-        return parent::natcasesort();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function natsort()
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'natsort', []);
-
-        return parent::natsort();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function offsetExists($key)
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'offsetExists', [$key]);
-
-        return parent::offsetExists($key);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function &offsetGet($key)
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'offsetGet', [$key]);
-
-        return parent::offsetGet($key);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function offsetSet($key, $value)
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'offsetSet', [$key, $value]);
-
-        return parent::offsetSet($key, $value);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function offsetUnset($key)
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'offsetUnset', [$key]);
-
-        return parent::offsetUnset($key);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function serialize()
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'serialize', []);
-
-        return parent::serialize();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function setFlags($flags)
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setFlags', [$flags]);
-
-        return parent::setFlags($flags);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function setIteratorClass($class)
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setIteratorClass', [$class]);
-
-        return parent::setIteratorClass($class);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function uasort($function)
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'uasort', [$function]);
-
-        return parent::uasort($function);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function uksort($function)
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'uksort', [$function]);
-
-        return parent::uksort($function);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function unserialize($data)
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'unserialize', [$data]);
-
-        return parent::unserialize($data);
+        return parent::setId($id);
     }
 
     /**

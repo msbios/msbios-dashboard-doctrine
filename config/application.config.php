@@ -6,8 +6,8 @@
 return [
     // Retrieve list of modules used in this application.
     'modules' => [
-        'MSBios\Test',
-        'Zend\Log',
+
+        'Zend\Serializer',
         'Zend\I18n',
         'Zend\Navigation',
         'Zend\Db',
@@ -25,6 +25,16 @@ return [
         'Zend\Router',
         'Zend\Validator',
 
+        'DoctrineModule',
+        'DoctrineORMModule',
+
+        'MSBios\Permissions\Acl',
+        'MSBios\Validator',
+        'MSBios\Hydrator',
+        'MSBios\Cache',
+        'MSBios\Session',
+        'MSBios\Paginator\Doctrine',
+        'MSBios\Test',
         'MSBios\Assetic',
         'MSBios\Widget',
         'MSBios\I18n',
@@ -42,9 +52,6 @@ return [
         'MSBios\CPanel',
         'MSBios\Resource\Doctrine',
         'MSBios\Dashboard',
-        'DoctrineModule',
-        'DoctrineORMModule',
-        'DoctrineDataFixtureModule',
         'MSBios\Doctrine',
         'MSBios\Form\Doctrine',
         'MSBios\Authentication\Doctrine',

@@ -6,4 +6,5 @@
 namespace MSBios\Dashboard\Doctrine;
 
 return [
+    // ...
 ];

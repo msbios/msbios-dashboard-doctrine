@@ -1617,16 +1617,16 @@
         },
         {
             "name": "msbios/cpanel",
-            "version": "v1.0.58",
+            "version": "v1.0.62",
             "source": {
                 "type": "git",
                 "url": "https://github.com/msbios/msbios-cpanel.git",
-                "reference": "2aa2b3a3d0f5e54cc566f7f76cbad07b5c4cead9"
+                "reference": "18b34954d07adf8a810542589f9fbefc759415a0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/msbios/msbios-cpanel/zipball/2aa2b3a3d0f5e54cc566f7f76cbad07b5c4cead9",
-                "reference": "2aa2b3a3d0f5e54cc566f7f76cbad07b5c4cead9",
+                "url": "https://api.github.com/repos/msbios/msbios-cpanel/zipball/18b34954d07adf8a810542589f9fbefc759415a0",
+                "reference": "18b34954d07adf8a810542589f9fbefc759415a0",
                 "shasum": ""
             },
             "require": {
@@ -1673,7 +1673,7 @@
             "keywords": [
                 "php"
             ],
-            "time": "2019-03-11T09:35:53+00:00"
+            "time": "2019-05-27T09:04:11+00:00"
         },
         {
             "name": "msbios/cpanel-doctrine",
@@ -2206,16 +2206,16 @@
         },
         {
             "name": "msbios/guard-resource-doctrine",
-            "version": "v1.0.44",
+            "version": "v1.0.45",
             "source": {
                 "type": "git",
                 "url": "https://github.com/msbios/msbios-guard-resource-doctrine.git",
-                "reference": "6b37d7f282a1b3374369b7abd447f9a4d2a81669"
+                "reference": "2e255e6a6ee5388c57a51404c7a01952344d94f0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/msbios/msbios-guard-resource-doctrine/zipball/6b37d7f282a1b3374369b7abd447f9a4d2a81669",
-                "reference": "6b37d7f282a1b3374369b7abd447f9a4d2a81669",
+                "url": "https://api.github.com/repos/msbios/msbios-guard-resource-doctrine/zipball/2e255e6a6ee5388c57a51404c7a01952344d94f0",
+                "reference": "2e255e6a6ee5388c57a51404c7a01952344d94f0",
                 "shasum": ""
             },
             "require-dev": {
@@ -2259,7 +2259,7 @@
             "keywords": [
                 "php"
             ],
-            "time": "2018-12-26T08:08:26+00:00"
+            "time": "2019-05-24T08:29:41+00:00"
         },
         {
             "name": "msbios/hydrator",
@@ -2421,16 +2421,16 @@
         },
         {
             "name": "msbios/msbios",
-            "version": "v1.0.13",
+            "version": "v1.0.14",
             "source": {
                 "type": "git",
                 "url": "https://github.com/msbios/msbios-msbios.git",
-                "reference": "502180dde436cb7508c0026b297aa8b88fc36178"
+                "reference": "6cbfc980893f0ebc5e5a75a0e44d6da5a843be3f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/msbios/msbios-msbios/zipball/502180dde436cb7508c0026b297aa8b88fc36178",
-                "reference": "502180dde436cb7508c0026b297aa8b88fc36178",
+                "url": "https://api.github.com/repos/msbios/msbios-msbios/zipball/6cbfc980893f0ebc5e5a75a0e44d6da5a843be3f",
+                "reference": "6cbfc980893f0ebc5e5a75a0e44d6da5a843be3f",
                 "shasum": ""
             },
             "require": {
@@ -2466,7 +2466,7 @@
             "keywords": [
                 "php"
             ],
-            "time": "2019-04-25T09:28:55+00:00"
+            "time": "2019-05-24T09:11:36+00:00"
         },
         {
             "name": "msbios/navigation",
@@ -2713,16 +2713,16 @@
         },
         {
             "name": "msbios/resource-doctrine",
-            "version": "v1.0.46",
+            "version": "v1.0.47",
             "source": {
                 "type": "git",
                 "url": "https://github.com/msbios/msbios-resource-doctrine.git",
-                "reference": "dc85d418c64c9bda5cd9679f0ce790066c448276"
+                "reference": "d80d25591a16854c3635ce3011b09424b278b7d3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/msbios/msbios-resource-doctrine/zipball/dc85d418c64c9bda5cd9679f0ce790066c448276",
-                "reference": "dc85d418c64c9bda5cd9679f0ce790066c448276",
+                "url": "https://api.github.com/repos/msbios/msbios-resource-doctrine/zipball/d80d25591a16854c3635ce3011b09424b278b7d3",
+                "reference": "d80d25591a16854c3635ce3011b09424b278b7d3",
                 "shasum": ""
             },
             "require": {
@@ -2763,7 +2763,7 @@
             "keywords": [
                 "php"
             ],
-            "time": "2018-12-08T13:49:51+00:00"
+            "time": "2019-05-23T14:27:24+00:00"
         },
         {
             "name": "msbios/session",
